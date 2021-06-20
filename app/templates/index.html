@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/index.css')}}">
+    <title>Camera</title>
 </head>
-<body>
-    <div class="webcam">
-        <img src="{{ url_for('webcam') }}" width="100%">
+
+<body class="bkg">
+    <script src="{{url_for('static', filename='../static/js/script.js')}}"></script>
+    <div class="logo-txt">
+        <img class="logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="fora logo">
+
+        <h1 class="desctxt">
+            <p class="typewrite" data-period="2000" data-type='[ "Welcome to Fora!"]'>
+                <span class="wrap"></span>
+            </p>
+        </h1>
+
     </div>
+
+    <br>
+    <br>
+
+    <div class="bbtns">
+        <a href="/scanning"><button class="bttn_1"> Start Scanning!</button></a>
+        <a href="/info"><button class="bttn_2"> Info </button></a>
+    </div>
+
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
 </body>
+
 </html>
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/scanning.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pridi">
+    <title>Fora</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <img class="nav-logo" src="{{ url_for('static', filename='images/logo.png')}}">
+            </div>
+            <div class="nav-right">
+                <h2 class="nav-back"><a href="/">Back</a></h2>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="content">
+        <div class="content-left">
+            <div class="img-upload">
+                <form method="POST" action="/img" class="form" enctype="multipart/form-data">
+                    <div class="img-upload-container">
+                        <h2 class="img-types-title">.png, .jpeg, and .jpg files only</h2>
+                        <input type="file" name="file" class="img-input" accept=".png,.jpeg,.jpg">
+                    </div>
+                    <button type="submit" class="scan-btn">Scan</button>
+                </form>
+            </div>
+        </div>
+        <div class="content-right">
+
+            {% if prediction == "The image is invalid or unidentifiable" %}
+            <h2 class="prediction">{{ prediction }}</h2>
+
+            {% else %}
+            <h2 class="prediction">{{ prediction }}</h2>
+            <div class="nutrition-info">
+                <div class="nutrition-left">
+                    {% for n in nutrition[:16] %}
+                    <p class="nutrition">{{ n }}</p>
+                    {% endfor %}
+                </div>
+
+                <div class="nutrition-right">
+                    {% for n in nutrition[16:] %}
+                    <p class="nutrition">{{ n }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Benne&family=Michroma&family=Special+Elite&family=Viaoda+Libre&display=swap");
+
+/*Info*/
+.info {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.desctxt {
+  color: #000000;
+  font-family: "Benne", serif;
+  font-size: 46px;
+  display: block;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.typewrite {
+  text-decoration: none;
+  color: #000000;
+}
+
+.cards {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 90%;
+  margin: auto;
+  grid-gap: 30px;
+}
+
+.i_hd {
+  font-family: "Benne", serif;
+  font-size: 80px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.i_card {
+  width: 70%;
+  height: 90%;
+  border-radius: 10px;
+  padding: 30px;
+  box-sizing: border-box;
+  /* cursor: pointer; */
+  margin: 20px auto;
+  background-color: rgba(81, 223, 176, 0.479);
+  background-position: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.i_mp {
+  font-family: "Benne", serif;
+  font-size: 80px;
+}
+
+.i_hf {
+  font-family: "Viaoda Libre", cursive;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.i_pf {
+  font-size: 18px;
+}

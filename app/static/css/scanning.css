@@ -1,0 +1,93 @@
+body {
+    background-color: linear-gradient(#FFFBFB, #E5E5E5)
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.content-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.img-upload {
+  background-color: #a0e884;
+  width: 80%;
+  border-radius: 20px;
+  padding: 20px;
+  margin: auto;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.img-upload-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-types-title {
+  margin-bottom: 50px;
+  font-family: "Benne", serif;
+  text-align: center;
+}
+
+.img-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  font-family: "Benne", serif;
+  font-size: 18px;
+  margin-left: 100px;
+}
+
+.scan-btn {
+  font-family: "Benne", serif;
+  width: 80%;
+  padding: 15px 20px 10px 20px;
+  font-size: 18px;
+  border-radius: 20px;
+  border: none;
+  margin-left: 10%;
+  transition: background-color 0.5s;
+}
+
+.scan-btn:hover {
+    cursor: pointer;
+    background-color: #c2bebe;
+    transition: background-color 0.5s;
+}
+
+.content-right {
+  width: 50%;
+}
+
+.prediction {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-right: 7%;
+}
+
+.nutrition-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-family: Pridi;
+}
+
+.nutrition {
+    margin-bottom: 5px;
+}

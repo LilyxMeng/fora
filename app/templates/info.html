@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/info.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pridi">
+    <title>Fora</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <img class="nav-logo" src="{{ url_for('static', filename='images/logo.png')}}">
+            </div>
+            <div class="nav-right">
+                <h2 class="nav-back"><a href="/">Back</a></h2>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="content">
+        <script src="{{url_for('static', filename='../static/js/script.js')}}"></script>
+
+        <div class="info">
+            <div>
+                <h1 class="i_hd">About Fora</h1>
+                <p class="desctxt">
+                    <a href="" class="typewrite" data-period="2000" data-type='[ "Fora More Mindful Meal"]'>
+                        <span class="wrap"></span>
+                    </a>
+                </p>
+            </div>
+            <div class="cards">
+                <div class="i_card">
+                    <h5 class="i_hf">What was our inspiration?</h5>
+                    <p class="i_pf">Knowing that nutritional value of the foods we eat can help encourage individuals
+                        all over the world to make healthier choices when it comes to eating. We decided that we wanted
+                        to make a web application that would allow users to check the nutritionals facts of the foods
+                        they'd eat all through the quick click of a few buttons.
+                    </p>
+                </div>
+                <div class="i_card">
+                    <h5 class="i_hf">What does Fora do?</h5>
+                    <p class="i_pf">Fora allows users to upload an image of a fruit or vegetable which is then compared
+                        to our machine learning model. The machine learning model then detects what fruit or vegetable
+                        is in the picture against 131 different fruits and vegetables and outputs the nutritional
+                        information for the detected fruit or vegetable.
+                    </p>
+                </div>
+                <div class="i_card">
+                    <h5 class="i_hf">How did we build Fora?</h5>
+                    <p class="i_pf">The machine learning model was built and trained using Jupyter Notebook and PyTorch.
+                        The model was trained using the Fruits 360 dataset on Kaggle:
+                        https://www.kaggle.com/moltean/fruits. The Edamam Nutrition API was integrated into our backend
+                        using Python. The values were passed to our frontend built with HTML, CSS, and JavaScript with
+                        the framework Flask.</p>
+                </div>
+                <div class="i_card">
+                    <h5 class="i_hf">What challenges did we run into?</h5>
+                    <p class="i_pf">This was our first time creating a machine learning model so there were lots of
+                        challenges. One of the biggest ones was the wait time. The first cycle of our training took 5
+                        hours and during that time, our team wasn't even sure if it was working or not. The dataset
+                        contained over 90,000 images and unfortunately since we've never created a machine learning
+                        model, we didn't know how long it would take. We initialized our model to train over 3 cycles so
+                        that was 3x5 hours - 15 hours. Training it alone took a considerable amount of time since our
+                        deadline was June 20 at 12am, about 30 hours to create our project. Aside from training, we also
+                        had to spend some hours testing it, making sure the Edamam Nutrition API worked, and that our
+                        website took in an image and outputted accurate information. Other challenges included working
+                        with Visual Studio Code and their LiveShare extension. Allowing all of our teammates to access
+                        the application cut into some of our time to build the application.</p>
+                </div>
+                <div class="i_card">
+                    <h5 class="i_hf">What accomplishments are we proud of?</h5>
+                    <p class="i_pf">We're proud of creating a full web application, frontend and backend, and
+                        integrating a machine learning model. After training our model, it achieved a 99.6% accuracy
+                        rate against the training dataset. After spending a few more minutes testing it against the
+                        testing dataset, it returned a 90% accuracy rate.</p>
+                </div>
+                <div class="i_card">
+                    <h5 class="i_hf">What did we learn?</h5>
+                    <p class="i_pf">We learned a lot about machine learning. This was our first time creating a model so
+                        we watched many tutorials and broke down each step with comments.</p>
+                </div>
+                <div class="i_card">
+                    <h5 class="i_hf">What's next for Fora?</h5>
+                    <p class="i_pf">Some of the new and exciting plans we have for Fora is releasing a mobile version
+                        since we are bound to reach a more diverse audience who may not have access to a laptop or
+                        computer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
